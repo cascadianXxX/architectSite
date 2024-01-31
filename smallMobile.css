@@ -1,0 +1,10 @@
+@media (max-width: 800px) {
+
+    HTML{
+        font-size: 10px;
+    }
+    
+    video{
+        height: 20rem;
+    }
+}
