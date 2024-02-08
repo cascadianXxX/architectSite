@@ -28,7 +28,7 @@ header {
     flex: 1;
     display: flex;
     flex-flow: column;
-    padding-top: 2rem;
+    padding-top: 20vh;
 }
 
 header>ul>li>.topic {
@@ -41,7 +41,7 @@ header>ul>li>.topic {
 
 main {
     flex: 4;
-    padding-top: 2rem;
+    padding-top: 10vh;
 }
 
 .empty {
@@ -70,4 +70,13 @@ header>ul>li>.topic:hover {
 main>h1{
     text-align: center;
     font-size: 3rem;
+}
+main>picture{
+    display: flex;
+    height: 500px;
+    padding-top: 20px;
+    justify-content: center;
+}
+main>h2{
+    text-align: center;
 }
