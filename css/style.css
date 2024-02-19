@@ -27,7 +27,7 @@ body {
     padding: 0;
     /*background-color: var(--antiflash-white);*/
     min-height: 100vh;
-    background-color: grey;
+    background-color: white;
 }
 
 .flexCol {
