@@ -1,120 +1,83 @@
-:root {
-    --seasalt: #f8f9faff;
-    --antiflash-white: #e9ecefff;
-    --platinum: #dee2e6ff;
-    --french-gray: #ced4daff;
-    --french-gray-2: #adb5bdff;
-    --slate-gray: #6c757dff;
-    --outer-space: #495057ff;
-    --onyx: #343a40ff;
-    --eerie-black: #212529ff;
-}
-
-a {
-    color: inherit;
-    text-decoration: none;
-    font-weight: inherit;
-    font-size: inherit;
-}
-
-html {
-    font-size: 10px;
-    font-family: 'Roboto Condensed', sans-serif;
-}
-
-body {
-    margin: 0;
-    padding: 0;
-    /*background-color: var(--antiflash-white);*/
-    min-height: 100vh;
-    background-color: white;
-}
-
-.flexCol {
-    display: flex;
-    flex-flow: column;
-}
-
-.flexRow {
-    display: flex;
-    flex-flow: row;
-}
-
-.PadTop {
-    padding-top: 5rem;
-}
-
-.PadTopSides {
-    padding-top: 15rem;
-}
-
-/* ------ */
-.horizantalLine {
+.hL {
     width: 0.2rem;
     background-color: black;
 }
 
-.sideFiller {
-    flex: 1;
-}
+/* ----- HEADER ----- */
 
-.flexOne {
-    flex: 1;
-}
-
-/* ----- LEVEL 1 ----- */
-main,
-header,
-aside {
-    font-size: 2rem;
-}
-
-main {
+header{
     display: flex;
-    flex: 4;
+    flex-flow: column;
+
+    font-size: 2rem;
+    padding-top: 15rem;
+
+    flex: 1;
+}
+
+header>a {
+    padding: 1rem;
+    font-weight: 700;
+}
+
+
+header > a.topic:hover {
+    color: darkgreen;
+}
+
+.topic.pointer:before {
+    color: inherit;
+    content: "\25CF";
+    padding-right: 10px;
+}
+
+/* ----- MAIN ----- */
+
+main{
+    display: flex;
     align-items: center;
+    flex-flow: column;
+
+    font-size: 2rem;
+    padding-top: 5rem;
+
+    flex: 4;
 }
 
-/* ----- LEVEL 2 ----- */
-header>ul>li {
-    padding: 1rem;
-    font-weight: 700;
-}
-
-aside>ul>li {
-    padding: 1rem;
-    font-weight: 700;
-}
-
-main>h1 {
+main>div.name {
     font-size: 3rem;
 }
 
-main>h2 {
+main>div.nickname {
     font-size: 2rem;
     padding-top: 1rem;
 }
 
-main>picture {
+main>.portrait {
     padding-top: 4rem;
-}
-
-/* ----- LEVEL 3 ----- */
-
-.topic:hover {
-    color: darkgreen;
-}
-
-.pointer:before {
-    content: "\25CF";
-    color: inherit;
-    padding-right: 10px;
-}
-
-picture>img {
     max-height: 50rem;
 }
 
-aside>ul>li>a>img {
-    height: 3rem;
+/* ----- ASIDE ----- */
+
+aside {
+    display: flex;
+    flex-flow: column;
+    font-size: 2rem;
+    padding-top: 15rem;
+    flex: 1;
+}
+
+aside>a {
+    font-weight: 700;
+    display: inline-flex;
+    padding: 1rem 2rem 1rem 1rem;
+    margin-right: auto;
+    
+}
+
+aside>a>img {
+    height: 2em;
+    width: auto; /* Maintain aspect ratio */
+    display: block; /* Ensures no extra space below the image */
 }
