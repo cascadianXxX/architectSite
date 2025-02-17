@@ -9,3 +9,4 @@ config/secrets.yml
 
 clipper_percentage_shower.py
 .vscode
+normal/
