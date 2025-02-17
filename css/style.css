@@ -81,3 +81,19 @@ aside>a>img {
     width: auto; /* Maintain aspect ratio */
     display: block; /* Ensures no extra space below the image */
 }
+
+
+.box {
+    background: var(--antiflash-white);
+    border: 0.1rem solid var(--platinum);
+    box-shadow: 0 0.4rem 1rem rgba(0, 0, 0, 0.1);
+    border-radius: 1rem;
+    width: 40%;
+    padding: 1rem;
+}
+.box > img{
+    width: 100%;
+    height: auto;
+    border: 1rem solid var( --outer-space);
+
+}
