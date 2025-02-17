@@ -28,7 +28,7 @@ header > a.topic:hover {
 .topic.pointer:before {
     color: inherit;
     content: "\25CF";
-    padding-right: 10px;
+    padding-right: 1rem;
 }
 
 /* ----- MAIN ----- */
