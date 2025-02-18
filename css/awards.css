@@ -1,0 +1,101 @@
+/* ----- AWARDS SECTION ----- */
+
+.awards {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    padding: 5rem 5% 5rem 5%;
+    width: 100%;
+}
+
+/* Section and Subsection Titles */
+.awards > .section-title,
+.awards > .sub-title,
+.awards > .sub-sub-title {
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    padding: 1rem;
+}
+
+.awards > .section-title {
+    font-size: 3rem;
+    border-bottom: 0.2rem solid var(--outer-space);
+}
+
+.awards > .sub-title,
+.awards > .sub-sub-title {
+    font-size: 2.5rem;
+    background: var(--french-gray);
+    padding-left: 2rem;
+}
+.awards > .sub-sub-title {
+    margin-left: 1%;
+}
+
+/* Entry Blocks */
+.awards > .entry {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1.5rem;
+    background: var(--antiflash-white);
+    border-left: 0.5rem solid var(--onyx);
+    border-radius: 0.5rem;
+    color: var(--slate-gray);
+    margin-left: 2%;
+}
+
+/* Text Styles Inside Entries */
+.awards > .entry > strong {
+    font-weight: 700;
+    color: var(--eerie-black);
+}
+
+.awards > .entry > em {
+    font-style: italic;
+    color: var(--outer-space);
+}
+
+/* Image Styling */
+.awards > .entry > img {
+    max-width: 20%;
+    min-width: 20rem; /* Ensures reasonable minimum size */
+    height: auto;
+    border-radius: 1rem;
+    border: 0.3rem solid var(--outer-space);
+    margin-top: 1rem; /* Spacing between text and image */
+    align-self: center;
+}
+
+
+/* Overlay background when zoomed */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.8);
+    display: none;
+    z-index: 999;
+    cursor: pointer;
+}
+
+.active-overlay {
+    display: block;
+}
+
+/* Zoomed Image Styling */
+.zoomed-image {
+    position: fixed;
+    max-width: 80%;
+    max-height: 80%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 1rem;
+    border: 0.3rem solid var(--outer-space);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    z-index: 1000;
+}
