@@ -1,0 +1,58 @@
+/* ----- ESERLER SECTION ----- */
+
+.works {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    padding: 5rem 5% 5rem 5%;
+    max-width: 100%;
+    min-width: 30rem; 
+}
+
+/* Section and Subsection Titles */
+.works > .section-title,
+.works > .sub-title,
+.works > .sub-sub-title {
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    padding: 1rem;
+}
+
+.works > .section-title {
+    font-size: 3rem;
+    border-bottom: 0.2rem solid var(--outer-space);
+}
+
+.works > .sub-title ,
+.works > .sub-sub-title {
+    font-size: 2.5rem;
+    background: var(--french-gray);
+    padding-left: 2rem;
+}
+.works > .sub-sub-title {
+    margin-left: 1%;
+}
+/* Entry Blocks */
+.works > .entry {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1.5rem;
+    background: var(--antiflash-white);
+    border-left: 0.5rem solid var(--onyx);
+    border-radius: 0.5rem;
+    color: var(--slate-gray);
+    margin-left: 2%;
+}
+
+/* Text Styles Inside Entries */
+.works > .entry > strong {
+    font-weight: 700;
+    color: var(--eerie-black);
+}
+
+.works > .entry > em {
+    font-style: italic;
+    color: var(--outer-space);
+}
