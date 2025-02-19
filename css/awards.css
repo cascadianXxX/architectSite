@@ -28,6 +28,7 @@
     font-size: 2.5rem;
     background: var(--french-gray);
     padding-left: 2rem;
+    border-radius: 0.5rem;
 }
 .awards > .sub-sub-title {
     margin-left: 1%;
