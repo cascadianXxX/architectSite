@@ -84,9 +84,6 @@ aside>a>img {
 
 
 .box {
-    background: var(--antiflash-white);
-    border: 0.1rem solid var(--platinum);
-    box-shadow: 0 0.4rem 1rem rgba(0, 0, 0, 0.1);
     border-radius: 1rem;
     width: 40%;
     padding: 1rem;
@@ -95,5 +92,10 @@ aside>a>img {
     width: 100%;
     height: auto;
     border: 1rem solid var( --outer-space);
+    box-shadow: 0 0.4rem 1rem rgba(0, 0, 0, 0.1);    
+    transition: transform 0.2s ease-in-out;
 
+}
+.box > img:hover{
+    transform: scale(1.01);
 }

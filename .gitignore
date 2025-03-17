@@ -1,12 +1,11 @@
-# Ignore all `.log` files
 *.log
 
-# Ignore the `node_modules` directory
 node_modules/
 
-# Ignore a specific file
 config/secrets.yml
 
 clipper_percentage_shower.py
+
 .vscode
+
 normal/
