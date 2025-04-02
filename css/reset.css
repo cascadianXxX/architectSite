@@ -40,15 +40,6 @@ table {
 	border-spacing: 0;
 }
 
-@font-face {
-	font-family: Roboto_Condensed;
-	src: url(../font/Roboto_Condensed.ttf);
-}
-html{
-	font-family: Roboto_Condensed;
-	font-weight: 400;
-	font-size: 10px;
-}
 .light{
 	font-weight: 100;
 }

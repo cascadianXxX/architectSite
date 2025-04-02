@@ -42,16 +42,18 @@ main{
 
     font-size: 2rem;
     padding-top: 5rem;
+    gap: 4rem;
 
     flex: 4;
 }
 
 main>div.name {
-    font-size: 3rem;
+    font-size: 6rem;
+    text-shadow: 0px 0px 0.2em var(--onyx);
 }
 
 main>div.nickname {
-    font-size: 2rem;
+    font-size: 5rem;
     padding-top: 1rem;
 }
 
@@ -93,7 +95,7 @@ aside>a>img {
     justify-content: center;
 }
 .box > img{
-    width: 50%;
+    width: 100%;
     height: auto;
     border: 1rem solid var( --outer-space);
     box-shadow: 0 0.4rem 1rem rgba(0, 0, 0, 0.1);    
@@ -111,4 +113,25 @@ aside > a:nth-last-child(1), aside > a:nth-last-child(2){
 .second{
     width: 100%;
 
+}
+.logo{    
+    border-radius: 1rem;
+    width: 40%;
+    padding: 1rem;
+    padding-bottom: 4rem;
+    display: flex;
+    justify-content: center;
+}
+.logo > img{
+    width: 80%;
+    height: auto;
+    border: 1rem solid var( --outer-space);
+    box-shadow: 0 0.4rem 1rem rgba(0, 0, 0, 0.1);    
+    transition: transform 0.2s ease-in-out;
+    border-radius: 20em;
+}
+
+
+.name{
+    font-size: 6em;
 }
