@@ -13,10 +13,12 @@ header{
     padding-top: 15rem;
 
     flex: 1;
+    padding-left: 2rem;
 }
 
 header>a {
-    padding: 1rem;
+    padding: 1rem 1rem 1rem 1rem;
+
     font-weight: 700;
 }
 
@@ -98,4 +100,8 @@ aside>a>img {
 }
 .box > img:hover{
     transform: scale(1.01);
+}
+
+aside > a:nth-last-child(1), aside > a:nth-last-child(2){
+    word-break: break-all;
 }

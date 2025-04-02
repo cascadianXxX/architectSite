@@ -67,7 +67,6 @@ a {
 
 body {
     margin: 0;
-    padding: 0 10%;
     min-height: 100vh;
     background-color: var(--seasalt);
     display: flex;

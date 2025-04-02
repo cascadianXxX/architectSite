@@ -18,8 +18,15 @@
 }
 
 @media (max-width: 600px) {
+    body{
+        padding: 0;
+    }
     html {
         font-size: 4px;
+    }
+    
+    header>a {
+        padding: 2rem 1rem;
     }
 
 }
