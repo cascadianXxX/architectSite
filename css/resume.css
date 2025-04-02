@@ -1,0 +1,22 @@
+
+.resume_text{
+    color: black;
+    line-height: 2em;
+    font-size: 1.5em;
+    display: flex;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    padding: 1em;
+
+}
+.resume_text > div{
+    gap: 1em;
+    border-radius: 0.5rem;
+    background-color: var(--french-gray);
+} 
+
+.resume_text > div > p{
+    padding: 1em 2em;
+    
+}

@@ -1,0 +1,52 @@
+main{
+    gap: 1em;
+}
+.photo_multi{
+    color: black;
+    line-height: 2em;
+    font-size: 1.5em;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    padding: 1em;
+    gap: 1em;
+    background-color: var(--french-gray);   
+}
+.photo_multi > img{
+    border-radius: 0.5rem;
+    max-width: 43%;
+    border: 1rem solid var(--onyx);
+} 
+
+
+
+/* Overlay background when zoomed */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.8);
+    display: none;
+    z-index: 999;
+    cursor: pointer;
+}
+
+.active-overlay {
+    display: block;
+}
+
+/* Zoomed Image Styling */
+.zoomed-image {
+    position: fixed;
+    max-width: 95%;
+    max-height: 95%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 1rem;
+    border: 0.3rem solid var(--outer-space);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    z-index: 1000;
+}
