@@ -57,3 +57,10 @@
     font-style: italic;
     color: var(--outer-space);
 }
+.publication-reference{
+    display: flex;
+    font-size: 2em;
+    justify-content: center;
+    padding: 1rem;
+    font-weight: 600;
+}
