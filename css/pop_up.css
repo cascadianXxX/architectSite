@@ -1,0 +1,97 @@
+.popup-overlay {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.popup-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  max-width: 500px;
+  max-height: 90vh;
+  background: #1d3557; /* Border rengiyle aynı */
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 6px 25px rgba(0,0,0,0.4);
+  border: 10px solid #1d3557; /* Daha kalın çerçeve */
+}
+
+.popup-video-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #000;
+  width: 100%;
+  flex: 1 1 auto;
+  position: relative;
+}
+
+.popup-video {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.popup-close {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  width: 38px;
+  height: 38px;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-weight: bold;
+  color: #333;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.4);
+  transition: background 0.2s, transform 0.2s;
+  z-index: 2;
+}
+
+.popup-close:hover {
+  background: #fff;
+  transform: scale(1.1);
+}
+
+.popup-date {
+  text-align: center;
+  background: #ffffff;
+  color: #1d3557;
+  font-size: 3rem;
+  font-weight: bold;
+  padding: 14px 20px;
+  margin: 16px;
+  border: 2px solid #1d3557;
+  border-radius: 8px;
+}
+
+@media (max-width: 480px) {
+  .popup-container {
+    max-width: 95%;
+    border-width: 8px;
+  }
+
+  .popup-date {
+    font-size: 20px;
+    margin: 12px;
+    padding: 10px 16px;
+  }
+
+  .popup-close {
+    width: 32px;
+    height: 32px;
+    font-size: 2rem;
+  }
+}

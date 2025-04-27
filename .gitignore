@@ -1,15 +1,15 @@
-*.log
+# *.log
 
-node_modules/
+# node_modules/
 
-config/secrets.yml
+# config/secrets.yml
 
-clipper_percentage_shower.py
+# clipper_percentage_shower.py
 
-.vscode
+# .vscode
 
-normal/
-new.html
-progress_bar.html
-images/1.png
-images/logo_1_circle_only.png
+# normal/
+# new.html
+# progress_bar.html
+# images/1.png
+# images/logo_1_circle_only.png
