@@ -9,6 +9,7 @@
     <link   rel="stylesheet"      href="./css/style.css" />
     <link   rel="stylesheet"      href="./css/mobile.css" />
     <link   rel="stylesheet"      href="./css/main.css" />
+    <link   rel="stylesheet"      href="./css/pop_up.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -70,7 +71,24 @@
           alihankeskin@hotmail.com
       </a>
     </aside>
+    
+    <div class="popup-overlay" id="videoPopup">
+      <div class="popup-container">
+        <div class="popup-close" id="closePopup">✕</div>
+  
+        <div class="popup-video-wrapper">
+          <video id="popupVideo" class="popup-video" controls autoplay muted>
+            <source src="./video/video.mp4" type="video/mp4">
+            Tarayıcınız video etiketini desteklemiyor.
+          </video>
+        </div>
+  
+        <p class="popup-date">7-8-9 MAYIS 2025</p>
+  
+      </div>
+    </div>
 
+    <script src="./javascript/pop_up.js" defer></script>
     <script src="./javascript/script.js" defer></script>
     <script src="./javascript/main.js" defer></script>
   </body>
