@@ -111,7 +111,7 @@ aside > a:nth-last-child(1), aside > a:nth-last-child(2){
     word-break: break-all;
 }
 .second{
-    width: 100%;
+    width: 80%;
 
 }
 .logo{    
@@ -131,7 +131,10 @@ aside > a:nth-last-child(1), aside > a:nth-last-child(2){
     border-radius: 20em;
 }
 
-
+.box > a{
+    width: 80%;
+    height: inherit;
+}
 .name{
     font-size: 6em;
 }
